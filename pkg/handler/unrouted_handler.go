@@ -410,8 +410,7 @@ func (handler *UnroutedHandler) PostFile(w http.ResponseWriter, r *http.Request)
 	resp.Header["Location"] = url
 
 	handler.Metrics.incUploadsCreated()
-	c.log = c.log.With("id", id)
-	c.log.InfoContext(c, "UploadCreated", "size", size, "url", url)
+	c.log.With().InfoContext(c, "UploadCreated", "id", id, "size", size, "url", url)
 
 	if handler.config.NotifyCreatedUploads {
 		handler.CreatedUploads <- newHookEvent(c, info)
