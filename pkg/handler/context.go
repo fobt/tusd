@@ -80,7 +80,7 @@ func (h UnroutedHandler) getContext(w http.ResponseWriter, r *http.Request) *htt
 	return c
 }
 
-func (c httpContext) Value(key any) any {
+func (c *httpContext) Value(key any) any {
 	// We overwrite the Value function to ensure that the values from the request
 	// context are returned because c.Context does not contain any values.
 	return c.req.Context().Value(key)
