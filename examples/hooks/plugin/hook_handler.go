@@ -4,8 +4,8 @@ import (
 	"log"
 
 	"github.com/hashicorp/go-plugin"
-	"github.com/fobt/tusd/v2/pkg/hooks"
-	tusdplugin "github.com/fobt/tusd/v2/pkg/hooks/plugin"
+	"github.com/tus/tusd/v2/pkg/hooks"
+	tusdplugin "github.com/tus/tusd/v2/pkg/hooks/plugin"
 )
 
 // Here is the implementation of our hook handler

@@ -14,7 +14,7 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/fobt/tusd/v2/pkg/hooks"
+	"github.com/tus/tusd/v2/pkg/hooks"
 )
 
 type FileHook struct {

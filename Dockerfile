@@ -1,5 +1,5 @@
 FROM --platform=$BUILDPLATFORM golang:1.25.5-alpine AS builder
-WORKDIR /go/src/github.com/fobt/tusd
+WORKDIR /go/src/github.com/tus/tusd
 
 # Add gcc and libc-dev early so it is cached
 RUN set -xe \
@@ -25,7 +25,7 @@ ARG TARGETARCH
 
 RUN set -xe \
 	&& GOOS=$TARGETOS GOARCH=$TARGETARCH go build \
-        -ldflags="-X github.com/fobt/tusd/v2/cmd/tusd/cli.VersionName=${GIT_VERSION} -X github.com/fobt/tusd/v2/cmd/tusd/cli.GitCommit=${GIT_COMMIT} -X 'github.com/fobt/tusd/v2/cmd/tusd/cli.BuildDate=$(date --utc)'" \
+        -ldflags="-X github.com/tus/tusd/v2/cmd/tusd/cli.VersionName=${GIT_VERSION} -X github.com/tus/tusd/v2/cmd/tusd/cli.GitCommit=${GIT_COMMIT} -X 'github.com/tus/tusd/v2/cmd/tusd/cli.BuildDate=$(date --utc)'" \
         -o /go/bin/tusd ./cmd/tusd/main.go
 
 # start a new stage that copies in the binary built in the previous stage

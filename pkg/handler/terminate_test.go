@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	. "github.com/fobt/tusd/v2/pkg/handler"
+	. "github.com/tus/tusd/v2/pkg/handler"
 
 	"github.com/stretchr/testify/assert"
 )

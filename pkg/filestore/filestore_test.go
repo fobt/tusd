@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/fobt/tusd/v2/pkg/handler"
+	"github.com/tus/tusd/v2/pkg/handler"
 )
 
 // Test interface implementation of Filestore

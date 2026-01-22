@@ -12,9 +12,9 @@ import (
 	"strings"
 	"syscall"
 
-	tushandler "github.com/fobt/tusd/v2/pkg/handler"
-	"github.com/fobt/tusd/v2/pkg/hooks"
-	"github.com/fobt/tusd/v2/pkg/hooks/plugin"
+	tushandler "github.com/tus/tusd/v2/pkg/handler"
+	"github.com/tus/tusd/v2/pkg/hooks"
+	"github.com/tus/tusd/v2/pkg/hooks/plugin"
 
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"

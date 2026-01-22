@@ -13,7 +13,7 @@ import (
 // the http.Header map is shared between the original request and HookEvent.
 // This test will fail with `go test -race` if Header is not cloned.
 //
-// See: https://github.com/fobt/tusd/issues/1320
+// See: https://github.com/tus/tusd/issues/1320
 func TestHookEventHeaderRace(t *testing.T) {
 	req := httptest.NewRequest("POST", "/files", nil)
 	req.Header.Set("Upload-Length", "1000")

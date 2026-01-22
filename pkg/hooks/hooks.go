@@ -4,9 +4,9 @@
 // system. For example, to use the HTTP-based hook system:
 //
 //	import (
-//		"github.com/fobt/tusd/v2/pkg/handler"
-//		"github.com/fobt/tusd/v2/pkg/hooks"
-//		"github.com/fobt/tusd/v2/pkg/hooks/http"
+//		"github.com/tus/tusd/v2/pkg/handler"
+//		"github.com/tus/tusd/v2/pkg/hooks"
+//		"github.com/tus/tusd/v2/pkg/hooks/http"
 //	)
 //	config := handler.Config{}
 //	hookHandler := http.HttpHook{
@@ -14,14 +14,14 @@
 //	}
 //	handler, err = hooks.NewHandlerWithHooks(&config, hookHandler, hooks.AvailableHooks)
 //
-// More details can be found in the documentation at github.com/fobt/tusd/docs/hooks.md
+// More details can be found in the documentation at github.com/tus/tusd/docs/hooks.md
 package hooks
 
 import (
 	"fmt"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/fobt/tusd/v2/pkg/handler"
+	"github.com/tus/tusd/v2/pkg/handler"
 	"golang.org/x/exp/slices"
 	"golang.org/x/exp/slog"
 )
