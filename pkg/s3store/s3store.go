@@ -84,9 +84,9 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/tus/tusd/v2/internal/semaphore"
-	"github.com/tus/tusd/v2/internal/uid"
-	"github.com/tus/tusd/v2/pkg/handler"
+	"github.com/fobt/tusd/v2/internal/semaphore"
+	"github.com/fobt/tusd/v2/internal/uid"
+	"github.com/fobt/tusd/v2/pkg/handler"
 	"golang.org/x/exp/slices"
 	"golang.org/x/sync/errgroup"
 

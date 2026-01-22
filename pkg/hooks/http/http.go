@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/sethgrid/pester"
-	"github.com/tus/tusd/v2/pkg/hooks"
+	"github.com/fobt/tusd/v2/pkg/hooks"
 )
 
 type HttpHook struct {

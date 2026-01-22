@@ -3,7 +3,7 @@ package handler_test
 import (
 	"testing"
 
-	"github.com/tus/tusd/v2/pkg/handler"
+	"github.com/fobt/tusd/v2/pkg/handler"
 
 	"github.com/golang/mock/gomock"
 )

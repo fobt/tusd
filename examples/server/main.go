@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/tus/tusd/v2/pkg/filelocker"
-	"github.com/tus/tusd/v2/pkg/filestore"
-	tusd "github.com/tus/tusd/v2/pkg/handler"
+	"github.com/fobt/tusd/v2/pkg/filelocker"
+	"github.com/fobt/tusd/v2/pkg/filestore"
+	tusd "github.com/fobt/tusd/v2/pkg/handler"
 )
 
 func main() {
